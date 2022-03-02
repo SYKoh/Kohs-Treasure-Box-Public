@@ -1,0 +1,22 @@
+{
+    "title": "",
+    "rules": [
+        {
+            "description": "extra-help",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "open_bracket",
+                        "modifiers": [
+                            "left_control"
+                        ]
+                    },
+                    "to": {
+                        "key_code": "escape"
+                    }
+                }
+            ]
+        }
+    ]
+}

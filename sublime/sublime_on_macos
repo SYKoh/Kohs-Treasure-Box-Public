@@ -1,0 +1,16 @@
+{
+	"theme": "auto",
+	"font_size": 18,
+	"ignored_packages":
+	[
+//		"Vintage",
+// Vintage means vim in sublime
+/*"DiffView",*/
+/*"Brackets Color Scheme",*/
+/*"ChineseLoremIpsum",*/
+	],
+	"color_scheme": "Mariana.sublime-color-scheme",
+	"open_files_in_new_window": false,
+	"relative_line_numbers": true,
+}
+

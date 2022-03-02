@@ -1,0 +1,71 @@
+{
+    "title": "",
+    "rules": [
+        {
+            "description": "koh's capslock resolution 6",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "input_sources": [
+                                {
+                                    "input_source_id": "com.apple.keylayout.ABC"
+                                }
+                            ],
+                            "type": "input_source_unless"
+                        }  
+                    ],
+                    "type": "basic",
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_control",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "select_input_source": {
+                                "input_source_id": "com.apple.keylayout.ABC",
+                                "language": "en"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "conditions": [
+                        {
+                            "input_sources": [
+                                {
+                                    "input_source_id": "com.apple.inputmethod.SCIM.ITABC"
+                                }
+                            ],
+                            "type": "input_source_unless"
+                        }  
+                    ],
+                    "type": "basic",
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_control",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "select_input_source": {
+                                "input_source_id": "com.apple.inputmethod.SCIM.ITABC",
+                                "input_mode_id": "com.apple.inputmethod.SCIM.ITABC",
+                                "language": "zh-Hans"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

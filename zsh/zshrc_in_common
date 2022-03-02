@@ -1,0 +1,58 @@
+# try `rehash` to update your paths
+# try `shellhelp` to get hints in terminal
+shellhelp () {
+  echo 'ctrl c to pause'
+  echo 'ctrl z to background'
+  echo 'ctrl d to exit shell'
+  echo 'ctrl l to clean screen'
+  echo 'ctrl a to move cursor to line front'
+  echo 'ctrl e to move sursor to line tail'
+  echo 'ctrl u to erase former typein'
+  echo 'ctrl k to erase latter typein'
+  echo 'ctrl w to erase a word typein'
+  echo 'ctrl y to restore the text you just deleted'
+  echo 'ctrl p to restore the last command you just executed'
+  echo 'ctrl r to search history command you executed'
+  echo 'ctrl p in vim to intelli'
+}
+
+
+
+# ALIAS OF MINE
+
+alias zshconfig="st ~/.zshrc"
+alias sourcez='source ~/.zshrc'
+
+alias cip="curl cip.cc"
+alias cipp="curl myip.ipip.net"
+alias cippp="ifconfig.me"
+alias cspd='curl -o /dev/null -s -w %{time_namelookup}:%{time_connect}:%{time_starttransfer}:%{time_total}'
+alias ping='ping -c 5'
+
+alias cdd='cd /Users/$USER/Desktop'
+alias cdh='cd ~'
+
+alias mkt='mkdir temp'
+
+alias cls='clear'
+
+# ALIAS OF MINE END
+
+
+
+# SHADOWSOCKS PROXY
+noproxy(){
+        unset all_proxy
+        echo "Proxy off"
+}
+proxys(){
+        export all_proxy=socks5://127.0.0.1:1086
+        echo -e "\033[45;37mShadowSocks\nProxy on\033[0m"
+}
+# SHADOWSOCKS PROXY END
+
+
+
+# LANGUAGE ENVIRONMENT
+# export LANG=zh_CN.UTF-8
+# export LC_ALL=zh_CN.UTF-8

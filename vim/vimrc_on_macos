@@ -1,0 +1,3 @@
+set shell=/bin/zsh
+set number
+set relativenumber

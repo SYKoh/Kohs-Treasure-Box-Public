@@ -1,0 +1,1 @@
+https://github.com/pqrs-org/Karabiner-Elements/issues/19

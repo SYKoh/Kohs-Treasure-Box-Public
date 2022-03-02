@@ -1,0 +1,15 @@
+# PROXY SET
+# ShadowSocks Proxy
+proxys () {
+  export all_proxy=socks5://127.0.0.1:1086
+  echo -e "\033[45;37mShadowSocks\nProxy on\033[0m"
+  cspdg
+}
+# noproxy
+noproxy () {
+  unset all_proxy
+  unset http_proxy
+  unset https_proxy
+  echo "Proxy off"
+}
+#PROXY SET END

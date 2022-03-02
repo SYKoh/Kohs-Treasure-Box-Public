@@ -1,0 +1,30 @@
+{
+    "title": "newCapsLock Remap Write by Hand with Koh",
+    "rules": [
+        {
+            "description": "space ctrl if alone,control if held down",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to_if_alone": [
+                        {
+                            "key_code": "spacebar",
+                            "modifiers": [
+                                "left_control"
+                            ],
+                            "lazy": false
+                        }
+                    ],
+                    "to_if_held_down": [
+                        {
+                            "key_code": "left_control"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

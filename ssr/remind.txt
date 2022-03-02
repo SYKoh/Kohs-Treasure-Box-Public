@@ -1,0 +1,3 @@
+ssr脚本需要jq curl
+
+ssr脚本中github的地址可能过慢，可以尝试hub.fastgit.org / hub.fastgit.xyz 
